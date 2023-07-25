@@ -1,0 +1,9 @@
+{
+	"name": "avinashadf2023",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8e4fa9b8-f06c-4602-ae29-bd66812deb38",
+		"tenantId": "896519f0-dffb-44ce-98b4-801c47c78ced"
+	}
+}
