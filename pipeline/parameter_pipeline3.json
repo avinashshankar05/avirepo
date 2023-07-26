@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "parameterdsn",
+						"referenceName": "pm_sourcedsn",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filestorage": {
@@ -60,7 +60,7 @@
 								"value": "@pipeline().parameters.pp_dir_in",
 								"type": "Expression"
 							},
-							"ds_filename": {
+							"ds_dir_filename": {
 								"value": "@pipeline().parameters.pp_filename",
 								"type": "Expression"
 							}
@@ -69,18 +69,18 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "para_source_dataset",
+						"referenceName": "pm_sinkdsn",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filestorage": {
 								"value": "@pipeline().parameters.pp_filestorage",
 								"type": "Expression"
 							},
-							"ds_dir_in": {
+							"ds_dir_out": {
 								"value": "@pipeline().parameters.pp_dir_out",
 								"type": "Expression"
 							},
-							"ds_filename": {
+							"ds_dir_filename": {
 								"value": "@pipeline().parameters.pp_filename",
 								"type": "Expression"
 							}
