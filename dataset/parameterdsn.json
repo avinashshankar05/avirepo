@@ -12,10 +12,10 @@
 			"ds_dir_in": {
 				"type": "string"
 			},
-			"ds_dir_out": {
+			"ds_filename": {
 				"type": "string"
 			},
-			"ds_filename": {
+			"ds_dir_out": {
 				"type": "string"
 			}
 		},
