@@ -1,6 +1,20 @@
 {
 	"name": "parameter_pipeline3",
 	"properties": {
+		"parameters": {
+			"pp_filestorage": {
+				"type": "string"
+			},
+			"pp_dir_in": {
+				"type": "string"
+			},
+			"pp_dir_out": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
