@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "para_source_dataset",
+						"referenceName": "parameterdsn",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filestorage": {
