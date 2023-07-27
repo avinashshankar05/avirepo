@@ -31,7 +31,21 @@
 				"inputs": [
 					{
 						"referenceName": "Parasource",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": {
+								"value": "@pipeline().parameters.pp_filesystem",
+								"type": "Expression"
+							},
+							"ds_layername": {
+								"value": "@pipeline().parameters.pp_dir_in",
+								"type": "Expression"
+							},
+							"ds_filename": {
+								"value": "@pipeline().parameters.pp_filename",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
