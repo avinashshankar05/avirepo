@@ -120,6 +120,9 @@
 			},
 			"pp_dir": {
 				"type": "string"
+			},
+			"pp_dir_out": {
+				"type": "string"
 			}
 		},
 		"annotations": []
