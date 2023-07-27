@@ -31,8 +31,6 @@
 					},
 					"fieldList": [
 						"childItems",
-						"columnCount",
-						"contentMD5",
 						"itemName",
 						"itemType"
 					],
