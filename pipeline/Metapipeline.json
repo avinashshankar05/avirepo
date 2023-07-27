@@ -17,9 +17,25 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Parasource",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": {
+								"value": "@pipeline().parameters.pp_container",
+								"type": "Expression"
+							},
+							"ds_layername": {
+								"value": "@pipeline().parameters.pp_dir",
+								"type": "Expression"
+							}
+						}
 					},
-					"fieldList": [],
+					"fieldList": [
+						"childItems",
+						"columnCount",
+						"contentMD5",
+						"itemName",
+						"itemType"
+					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"enablePartitionDiscovery": false
