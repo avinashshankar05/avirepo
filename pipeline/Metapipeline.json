@@ -26,7 +26,8 @@
 							"ds_layername": {
 								"value": "@pipeline().parameters.pp_dir",
 								"type": "Expression"
-							}
+							},
+							"ds_filename": " "
 						}
 					},
 					"fieldList": [
