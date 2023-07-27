@@ -50,6 +50,9 @@
 			},
 			"pp_dir": {
 				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
 			}
 		},
 		"annotations": []
