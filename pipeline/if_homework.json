@@ -190,7 +190,7 @@
 														"type": "Expression"
 													},
 													"ds_dir": " ",
-													"ds_filename": " "
+													"ds_filename": "  "
 												}
 											}
 										],
@@ -202,7 +202,9 @@
 													"ds_container": {
 														"value": "@activity('Get Metadata1').output.pipelineReturnValue",
 														"type": "Expression"
-													}
+													},
+													"ds_dir": " ",
+													"ds_filename": " "
 												}
 											}
 										]
