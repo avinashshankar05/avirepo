@@ -111,13 +111,25 @@
 										"inputs": [
 											{
 												"referenceName": "if_hw",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@activity('Get Metadata1').output.childItems",
+														"type": "Expression"
+													}
+												}
 											}
 										],
 										"outputs": [
 											{
 												"referenceName": "if_hw",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@activity('Get Metadata1').output.childItemsactivity('Get Metadata1').output.childItems",
+														"type": "Expression"
+													}
+												}
 											}
 										]
 									}
@@ -188,6 +200,20 @@
 				}
 			}
 		],
+		"parameters": {
+			"pp_filestorage": {
+				"type": "string"
+			},
+			"pp_dir_in": {
+				"type": "string"
+			},
+			"pp_dir_out": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
