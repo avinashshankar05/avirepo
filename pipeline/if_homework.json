@@ -183,13 +183,27 @@
 										"inputs": [
 											{
 												"referenceName": "if_hw",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@activity('Get Metadata1').output.childItems",
+														"type": "Expression"
+													},
+													"ds_dir": " ",
+													"ds_filename": " "
+												}
 											}
 										],
 										"outputs": [
 											{
 												"referenceName": "if_hw",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@activity('Get Metadata1').output.pipelineReturnValue",
+														"type": "Expression"
+													}
+												}
 											}
 										]
 									}
