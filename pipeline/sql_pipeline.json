@@ -81,7 +81,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "SqlServerTable2",
+						"referenceName": "SqlServerTable1",
 						"type": "DatasetReference"
 					}
 				]
