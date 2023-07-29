@@ -17,7 +17,17 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "if_hw",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": {
+								"value": "@pipeline().parameters.pp_filestorage",
+								"type": "Expression"
+							},
+							"ds_dir": {
+								"value": "@pipeline().parameters.pp_dir_in",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"childItems",
@@ -62,78 +72,6 @@
 									"value": "@endswith(item().name,'.csv')",
 									"type": "Expression"
 								},
-								"ifFalseActivities": [
-									{
-										"name": "Copy data2",
-										"type": "Copy",
-										"dependsOn": [],
-										"policy": {
-											"timeout": "0.12:00:00",
-											"retry": 0,
-											"retryIntervalInSeconds": 30,
-											"secureOutput": false,
-											"secureInput": false
-										},
-										"userProperties": [],
-										"typeProperties": {
-											"source": {
-												"type": "DelimitedTextSource",
-												"storeSettings": {
-													"type": "AzureBlobFSReadSettings",
-													"recursive": true,
-													"enablePartitionDiscovery": false
-												},
-												"formatSettings": {
-													"type": "DelimitedTextReadSettings"
-												}
-											},
-											"sink": {
-												"type": "DelimitedTextSink",
-												"storeSettings": {
-													"type": "AzureBlobFSWriteSettings"
-												},
-												"formatSettings": {
-													"type": "DelimitedTextWriteSettings",
-													"quoteAllText": true,
-													"fileExtension": ".txt"
-												}
-											},
-											"enableStaging": false,
-											"translator": {
-												"type": "TabularTranslator",
-												"typeConversion": true,
-												"typeConversionSettings": {
-													"allowDataTruncation": true,
-													"treatBooleanAsNumber": false
-												}
-											}
-										},
-										"inputs": [
-											{
-												"referenceName": "if_hw",
-												"type": "DatasetReference",
-												"parameters": {
-													"ds_container": {
-														"value": "@activity('Get Metadata1').output.childItems",
-														"type": "Expression"
-													}
-												}
-											}
-										],
-										"outputs": [
-											{
-												"referenceName": "if_hw",
-												"type": "DatasetReference",
-												"parameters": {
-													"ds_container": {
-														"value": "@activity('Get Metadata1').output.childItemsactivity('Get Metadata1').output.childItems",
-														"type": "Expression"
-													}
-												}
-											}
-										]
-									}
-								],
 								"ifTrueActivities": [
 									{
 										"name": "Copy data1",
@@ -159,26 +97,7 @@
 													"type": "DelimitedTextReadSettings"
 												}
 											},
-											"sink": {
-												"type": "DelimitedTextSink",
-												"storeSettings": {
-													"type": "AzureBlobFSWriteSettings"
-												},
-												"formatSettings": {
-													"type": "DelimitedTextWriteSettings",
-													"quoteAllText": true,
-													"fileExtension": ".txt"
-												}
-											},
-											"enableStaging": false,
-											"translator": {
-												"type": "TabularTranslator",
-												"typeConversion": true,
-												"typeConversionSettings": {
-													"allowDataTruncation": true,
-													"treatBooleanAsNumber": false
-												}
-											}
+											"enableStaging": false
 										},
 										"inputs": [
 											{
@@ -188,23 +107,7 @@
 													"ds_container": {
 														"value": "@activity('Get Metadata1').output.childItems",
 														"type": "Expression"
-													},
-													"ds_dir": " ",
-													"ds_filename": "  "
-												}
-											}
-										],
-										"outputs": [
-											{
-												"referenceName": "if_hw",
-												"type": "DatasetReference",
-												"parameters": {
-													"ds_container": {
-														"value": "@activity('Get Metadata1').output.pipelineReturnValue",
-														"type": "Expression"
-													},
-													"ds_dir": " ",
-													"ds_filename": " "
+													}
 												}
 											}
 										]
