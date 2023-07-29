@@ -2,7 +2,7 @@
 	"name": "SqlServerTable2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "SqlServer2",
+			"referenceName": "SqlServer1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -96,7 +96,7 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "Product"
+			"table": "Demo"
 		}
 	}
 }
