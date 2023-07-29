@@ -1,0 +1,12 @@
+{
+	"name": "SqlServer2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=avinashserver1.database.windows.net;initial catalog=adf;user id=avinashserver",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDM5MDhCRkQzLUM2QzEtNDgxOC05QUUxLTgxMUE2Q0E3NDkwMV9hOTZmYTcyMS1kOTllLTQ4ZTktYTMwYS0yMmNhMDVlZjgxNWYiDQp9"
+		}
+	}
+}
