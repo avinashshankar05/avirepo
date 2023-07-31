@@ -7,10 +7,12 @@
 		},
 		"parameters": {
 			"ds_container": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "container2"
 			},
 			"ds_dir": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "staging"
 			}
 		},
 		"annotations": [],
