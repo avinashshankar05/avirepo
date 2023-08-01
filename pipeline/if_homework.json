@@ -19,7 +19,10 @@
 						"referenceName": "if_hw",
 						"type": "DatasetReference"
 					},
-					"fieldList": [],
+					"fieldList": [
+						"exists",
+						"itemName"
+					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"enablePartitionDiscovery": false
@@ -30,17 +33,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"pp_input": {
-				"type": "string"
-			},
-			"pp_output1": {
-				"type": "string"
-			},
-			"pp_output2": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
