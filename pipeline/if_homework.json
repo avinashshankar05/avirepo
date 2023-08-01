@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "if_hw",
+						"referenceName": "ifdataset",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
