@@ -48,7 +48,18 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "ParameterDataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_filesystem": {
+								"value": "@pipeline().parameters.pp_container",
+								"type": "Expression"
+							},
+							"ds_directory": {
+								"value": "@pipeline().parameters.pp_dir",
+								"type": "Expression"
+							},
+							"ds_filename": " "
+						}
 					},
 					"fieldList": [
 						"childItems",
