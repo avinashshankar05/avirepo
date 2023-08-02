@@ -18,8 +18,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "staging",
-				"fileSystem": "container2"
+				"fileName": " ",
+				"folderPath": {
+					"value": "@dataset().ds_dir",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().ds_container",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
