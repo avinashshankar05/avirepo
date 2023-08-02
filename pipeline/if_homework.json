@@ -110,13 +110,13 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "if_hw",
+									"referenceName": "sourcedataset",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "ifsinkdataset",
+									"referenceName": "ifoutputds1",
 									"type": "DatasetReference"
 								}
 							]
