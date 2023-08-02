@@ -16,16 +16,17 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ifdataset",
+						"referenceName": "Parasource",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
 						"exists",
 						"itemName",
-						"columnCount"
+						"childItems"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
