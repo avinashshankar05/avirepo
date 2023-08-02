@@ -17,11 +17,22 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "if_hw",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": {
+								"value": "@pipeline().parameters.pp_con",
+								"type": "Expression"
+							},
+							"ds_dir": {
+								"value": "@pipeline().parameters.pp_dir",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"exists",
-						"itemName"
+						"itemName",
+						"childItems"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
