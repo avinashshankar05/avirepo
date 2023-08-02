@@ -21,8 +21,7 @@
 					},
 					"fieldList": [
 						"exists",
-						"itemName",
-						"childItems"
+						"itemName"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
@@ -115,6 +114,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"pp_con": {
+				"type": "string"
+			},
+			"pp_dir": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
