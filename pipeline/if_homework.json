@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Parasource",
+						"referenceName": "if_hw",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
