@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Unzipfile and copying source to sink",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -61,14 +61,8 @@
 						"referenceName": "ZipSink",
 						"type": "DatasetReference",
 						"parameters": {
-							"ds_container": {
-								"value": "@pipeline().parameters.PP_sourcecon",
-								"type": "Expression"
-							},
-							"ds_dir": {
-								"value": "@pipeline().parameters.PP_sourcedir",
-								"type": "Expression"
-							}
+							"ds_container": " ",
+							"ds_dir": " "
 						}
 					}
 				]
@@ -78,7 +72,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Unzipfile and copying source to sink",
 						"dependencyConditions": [
 							"Succeeded"
 						]
