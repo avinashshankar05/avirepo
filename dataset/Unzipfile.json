@@ -14,7 +14,7 @@
 				"folderPath": "staging/AdventureWorksLT2012-20230717T144626Z-001.zip/AdventureWorksLT2012",
 				"fileSystem": "container2"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
