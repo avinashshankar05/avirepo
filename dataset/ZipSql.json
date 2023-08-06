@@ -94,7 +94,7 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "POC"
+			"table": "Product"
 		}
 	}
 }
