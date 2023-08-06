@@ -1,0 +1,100 @@
+{
+	"name": "ZipSql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "varchar"
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductNumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Color",
+				"type": "varchar"
+			},
+			{
+				"name": "StandardCost",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ListPrice",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Size",
+				"type": "varchar"
+			},
+			{
+				"name": "Weight",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "ProductCategoryID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductModelID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SellStartDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SellEndDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DiscontinuedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ThumbNailPhoto",
+				"type": "varbinary"
+			},
+			{
+				"name": "ThumbnailPhotoFileName",
+				"type": "varchar"
+			},
+			{
+				"name": "rowguid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "SalesLT",
+			"table": "POC"
+		}
+	}
+}
