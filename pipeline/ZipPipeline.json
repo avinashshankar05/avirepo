@@ -103,6 +103,134 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ProductID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProductID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ProductNumber",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProductNumber",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Color",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Color",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "StandardCost",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "StandardCost",
+									"type": "Decimal",
+									"physicalType": "money",
+									"scale": 4,
+									"precision": 19
+								}
+							},
+							{
+								"source": {
+									"name": "ListPrice",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ListPrice",
+									"type": "Decimal",
+									"physicalType": "money",
+									"scale": 4,
+									"precision": 19
+								}
+							},
+							{
+								"source": {
+									"name": "Size",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Size",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Weight",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Weight",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 8
+								}
+							},
+							{
+								"source": {
+									"name": "ProductCategoryID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProductCategoryID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ProductModelID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProductModelID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
