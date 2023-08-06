@@ -62,7 +62,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_container": {
-								"value": "@pipeline().parameters.pp_filesource",
+								"value": "@pipeline().parameters.PP_sourcecon",
+								"type": "Expression"
+							},
+							"ds_dir": {
+								"value": "@pipeline().parameters.PP_sourcedir",
 								"type": "Expression"
 							}
 						}
