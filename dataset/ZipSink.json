@@ -17,7 +17,9 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "AzureBlobFSLocation",
+				"folderPath": "gold",
+				"fileSystem": "container2"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
