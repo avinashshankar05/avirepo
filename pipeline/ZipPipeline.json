@@ -68,7 +68,7 @@
 				]
 			},
 			{
-				"name": "Copy data2",
+				"name": "Unzipfile loading into table",
 				"type": "Copy",
 				"dependsOn": [
 					{
