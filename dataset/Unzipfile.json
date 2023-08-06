@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "staging",
+				"fileName": "SalesLTProduct.txt",
+				"folderPath": "staging/AdventureWorksLT2012-20230717T144626Z-001.zip/AdventureWorksLT2012",
 				"fileSystem": "container2"
 			},
 			"columnDelimiter": ",",
