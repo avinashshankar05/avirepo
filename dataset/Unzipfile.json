@@ -14,7 +14,7 @@
 				"folderPath": "gold/AdventureWorksLT2012-20230717T144626Z-001.zip/AdventureWorksLT2012",
 				"fileSystem": "container2"
 			},
-			"columnDelimiter": "\t",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
