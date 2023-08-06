@@ -199,19 +199,19 @@
 			}
 		],
 		"parameters": {
-			"pp_filesource": {
-				"type": "string"
-			},
-			"pp_directory": {
-				"type": "string"
-			},
-			"pp_filename": {
-				"type": "string"
-			},
 			"PP_sourcecon": {
 				"type": "string"
 			},
 			"PP_sourcedir": {
+				"type": "string"
+			},
+			"pp2_con": {
+				"type": "string"
+			},
+			"pp2_dir": {
+				"type": "string"
+			},
+			"pp2_file": {
 				"type": "string"
 			}
 		},
