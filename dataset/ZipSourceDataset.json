@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "AdventureWorksLT2012-20230717T144626Z-001.zip",
-				"folderPath": "stage",
+				"folderPath": "silver",
 				"fileSystem": "container2"
 			},
 			"columnDelimiter": ",",
