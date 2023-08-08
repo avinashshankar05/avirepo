@@ -246,7 +246,12 @@
 				"inputs": [
 					{
 						"referenceName": "Unzipfile",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": " ",
+							"ds_dir": " ",
+							"ds_file": " "
+						}
 					}
 				],
 				"outputs": [
