@@ -175,7 +175,7 @@
 				"typeProperties": {
 					"notebookPath": "/Users/avinash.shankar05@outlook.com/POC2",
 					"baseParameters": {
-						"File_path": "SalesLTProduct.txt"
+						"File_path1": "SalesLTProduct.txt"
 					}
 				},
 				"linkedServiceName": {
