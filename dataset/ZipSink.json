@@ -18,8 +18,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "gold",
-				"fileSystem": "container2"
+				"folderPath": {
+					"value": "@dataset().ds_dir",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().ds_container",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
