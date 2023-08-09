@@ -21,9 +21,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "SalesLTProduct.txt",
-				"folderPath": "gold/AdventureWorksLT2012-20230717T144626Z-001.zip/AdventureWorksLT2012",
-				"fileSystem": "container2"
+				"folderPath": "-20230717T144626Z-001.zip/AdventureWorksLT2012"
 			},
 			"columnDelimiter": "\t",
 			"escapeChar": "\\",
