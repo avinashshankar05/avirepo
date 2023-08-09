@@ -129,7 +129,21 @@
 				"inputs": [
 					{
 						"referenceName": "Unzipfile",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": {
+								"value": "@pipeline().parameters.unzip_pp_container",
+								"type": "Expression"
+							},
+							"ds_dir": {
+								"value": "@pipeline().parameters.unzip_pp_dir",
+								"type": "Expression"
+							},
+							"ds_file": {
+								"value": "@pipeline().parameters.unzip_pp_file",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
