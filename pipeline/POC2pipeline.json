@@ -59,7 +59,17 @@
 				"outputs": [
 					{
 						"referenceName": "ZipSink",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_container": {
+								"value": "@pipeline().parameters.pp_container",
+								"type": "Expression"
+							},
+							"ds_dir": {
+								"value": "@pipeline().parameters.pp_dir",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
