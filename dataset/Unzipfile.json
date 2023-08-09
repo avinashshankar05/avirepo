@@ -21,7 +21,18 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "-20230717T144626Z-001.zip/AdventureWorksLT2012"
+				"fileName": {
+					"value": "@dataset().ds_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().ds_dir",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().ds_container",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": "\t",
 			"escapeChar": "\\",
