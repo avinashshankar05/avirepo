@@ -176,7 +176,7 @@
 					"notebookPath": "/Users/avinash.shankar05@outlook.com/Untitled Notebook 2023-08-10 16:33:26",
 					"baseParameters": {
 						"file_path": {
-							"value": "/mnt/adlsdirectory/raw/SalesLTProduct.txt",
+							"value": "'/mnt/adlsdirectory/raw/SalesLTProduct.txt'",
 							"type": "Expression"
 						}
 					}
