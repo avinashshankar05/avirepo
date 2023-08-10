@@ -175,7 +175,7 @@
 				"typeProperties": {
 					"notebookPath": "/Users/avinash.shankar05@outlook.com/Untitled Notebook 2023-08-10 16:33:26",
 					"baseParameters": {
-						"file_path": {
+						"input": {
 							"value": "@concat('SalesLTProduct.txt')",
 							"type": "Expression"
 						}
